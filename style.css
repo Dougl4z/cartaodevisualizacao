@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font1: 'Lexend Deca';
+    --font2: 'Big Shoulders Display';
+    --color1: #E28525;
+    --color2: #016972;
+    --color3: #00403F;
+    --colorletters: #F2F2F2;
+}
+/*MOBILE FIRST 375px*/
+body{
+    padding: 2em;
+}
+.container{
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 20em;
+    grid-template-rows: repeat(3, 27.5em);
+}
+    
+    
+.item1, .one, .btn{
+    display: flex;
+}
+.item1{
+    width: 20em;
+    height:27.5em ;
+}
+
+.one{
+    flex-direction: column;
+    padding: 3.1em;
+    gap: 2em;
+    background-color:var(--color1);
+    color: var(--colorletters);
+    border-top-left-radius: 0.625em;
+    border-top-right-radius: 0.625em;
+}
+img{
+    width: 4em;
+    height: 2.5em;
+}
+h2{
+    font-size: 2em;
+    font-family: var(--font2);
+    text-transform: uppercase;
+}
+.text1{
+    font-size: 0.875em;
+    font-family: var(--font1);
+    line-height: 2;
+    text-align: left;
+}
+.btn{
+    width: 9.1em;
+    height: 3em;
+    background-color: var(--colorletters);
+    border-radius: 10em;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+}
+    
+.btn:hover{
+    text-transform: var(--colorletters);
+    background:transparent;
+    border: 0.1em solid var(--colorletters);
+}
+.btn #orange:hover{
+    color: var(--colorletters);
+}
+    
+.btn #orange{
+    color: var(--color1);
+    font-family: var(--font1);
+    text-decoration: none;
+    padding: 1em;
+}
+
+
+
+/* ---------------------------------------------------*/
+
+
+
+.item2, .two, .btn{
+    display: flex;
+}
+.item2{
+    width: 20em;
+    height:27.5em ;
+}
+.two{
+    flex-direction: column;
+    padding: 3.1em;
+    gap: 1.5em;
+    background-color:var(--color2);
+    color: var(--colorletters);
+}
+img{
+    width: 4em;
+    height: 2.5em;
+}
+    
+h2{
+    font-size: 2em;
+    font-family: var(--font2);
+    text-transform: uppercase;
+}
+.text2{
+    font-size: 0.875em;
+    font-family: var(--font1);
+    line-height: 2;
+    text-align: left;
+}
+.btn{
+    width: 9.1em;
+    height: 3em;
+    background-color: var(--colorletters);
+    border-radius: 10em;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btn:hover{
+    text-transform: var(--colorletters);
+    background:transparent;
+    border: 0.1em solid var(--colorletters);
+}
+.btn #blue:hover{
+    color: var(--colorletters);
+}
+.btn #blue{
+    color: var(--color2);
+    font-family: var(--font1);
+    text-decoration: none;
+    padding: 1em;
+}
+
+
+
+/* -----------------------------------------------------------*/
+
+
+
+.item2, .three, .btn{
+    display: flex;
+}
+.item3{
+    width: 20em;
+    height:27.5em ;
+}
+.three{
+    flex-direction: column;
+    padding: 3.1em;
+    gap: 1.55em;
+    background-color:var(--color3);
+    color: var(--colorletters);
+    border-bottom-left-radius: 0.625em;
+    border-bottom-right-radius: 0.625em;
+}
+img{
+    width: 4em;
+    height: 2.5em;
+}
+h2{
+    font-size: 2em;
+    font-family: var(--font2);
+    text-transform: uppercase;
+}
+.text3{
+    font-size: 0.875em;
+    font-family: var(--font1);
+    line-height: 2;
+    text-align: left;
+}
+.btn{
+    width: 9.1em;
+    height: 3em;
+    background-color: var(--colorletters);
+    border-radius: 10em;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btn:hover{
+    text-transform: var(--colorletters);
+    background:transparent;
+    border: 0.1em solid var(--colorletters);
+}
+.btn #green:hover{
+    color: var(--colorletters);
+}
+.btn #green{
+    color: var(--color3);
+    font-family: var(--font1);
+    text-decoration: none;
+    padding: 1em;
+}
+
+/*DESKTOP*/
+
+@media (min-width: 1440px){
+
+    .container{
+        
+        display: grid;
+        
+        grid-template-columns: repeat(3, 20em);
+        grid-template-rows: 57.5em;
+    }
+    .one{
+        border-top-right-radius: inherit;
+        border-bottom-left-radius: 0.625em;
+    }
+    .three{
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: 0.625em;
+        border-top-right-radius: 0.625em;
+    }
+    
+}
+
+   
+    
+
+    
